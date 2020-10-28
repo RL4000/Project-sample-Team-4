@@ -182,11 +182,11 @@ public class PuzzleGame {
         return true;
     }
 
-    public void isWon() {
+    public void isWon() {//only tell won
         JOptionPane.showMessageDialog(null, "You Won!");
     }
 
-    public void newGame() {
+    public void newGame() {//new game
         t.stop();
         int confirm = JOptionPane.showConfirmDialog(null, "Do you want to make new game?", "New Game", JOptionPane.YES_NO_OPTION);
         if (confirm == JOptionPane.YES_OPTION) {
